@@ -18,9 +18,8 @@
         cups = weight / SERVING_SIZE;
         
         //get the price per cup
-        pricePerCup = (price / cups) * 100;
+        pricePerCup = (price / cups);
 
-        //calculate to decimal places and round down.  (It looks better priced) 
-        console.log(Math.floor(pricePerCup.toFixed(2)));
+        $('#ppc').text(pricePerCup.toFixed(2));
     }
 })();
